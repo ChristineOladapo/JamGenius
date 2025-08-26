@@ -3,10 +3,13 @@ import html
 import random
 from flask import Flask, jsonify, session, request
 from flask_cors import CORS
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 CORS(app)  # Enables CORS for all routes
-app.secret_key = '7a886de2ce878452ca0104ed3df6c0fd3b7f530e0aaa25dbb45437cfcec580e8'
+load_dotenv()
+app.secret_key = os.getenv("FLASK_SECRET_KEY")
 
 @app.route('/api/trivia', methods=['GET'])
 def getting_trivia():

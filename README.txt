@@ -14,7 +14,7 @@ Choose how many questions you'd like to answer from the dropdown menu, then see 
 - **Other Tools:** Git, VS Cod
 
 ## Run Locally
-Clone the Repository
+Clone this Repository
 To run the program download the Live Server extenstion
 Once downloaded right-click "index.html" and select "Open With Live Server"
 This should prompt you to the webpage
